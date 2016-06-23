@@ -1,27 +1,29 @@
-public class Punto {
+public class Punto<A,B> {
 
-    public int x;
-    public int y;
+    public A coordenadaX;
+    public B coordenadaY;
 
-
-    public Punto() {}
-
-    public Punto(int i, int i1) {
-        this.x = i;
-        this.y = i1;
+    public Punto(A x, B y) {
+        this.coordenadaX = x;
+        this.coordenadaY = y;
     }
 
+
+/*
     public void desplazarEnX(int i) {
-        this.x = this.x +i;
-    }
+        this.coordenadaX = this.coordenadaX +i;
+    }*/
 
+/*
     public void desplazarEnY(int i) {
-        this.y = this.y + i;
+        this.coordenadaY = this.coordenadaY + i;
     }
-
+*/
+/*
     public Punto sumarseConOtroPunto(Punto punto) {
 
-        return new Punto(this.x + punto.x, this.y + punto.y);
+        return new Punto(this.coordenadaX + punto.coordenadaX, this.coordenadaY + punto.coordenadaY);
 
     }
+*/
 }
